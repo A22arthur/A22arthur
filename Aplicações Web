@@ -47,3 +47,55 @@
  }
 
 ?>
+
+Outros Códigos:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, i
+ <title>Document</title>
+</head>
+<body>
+ <form method="post" action="recebe.php">
+ <input type="text" name="valor" id="valor" place
+ <input type="submit" value="enviar">
+ </form>
+</body>
+</html>
+<html>
+ <head>
+ <title>Valor das parcelas</title>
+ <meta charset="UTF-8"/>
+ <link rel="stylesheet" type="text/css" href="estilo.cs
+ </head>
+ <body>
+ <div>
+ <table id="table">
+<?php
+$v = $_POST['valor'];
+for($cont=1;$cont <= $v; $cont++){
+ if($cont%2==0){
+ $class="clara";
+ } else {
+ $class="escura"; 
+}
+ echo "<tr class=",$class,"><td>",$cont,"</td></tr> "
+}
+?>
+ </table>
+ </div>
+ </body>
+</html>
+
+.clara {
+ background-color: #f03a31;
+}
+.escura {
+ background-color: rgb(134, 255, 123);
+}
+#table {
+ position: absolute;
+ margin-left: 50%;
+ border-color: rgb(0, 0, 0);
+}
