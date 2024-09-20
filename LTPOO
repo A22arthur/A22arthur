@@ -1,0 +1,62 @@
+package br.com.controle;
+public class Dobro {  // CLASSE
+    // encapsulamento - public (+), private (-)
+    // + int getvalor() - traz um valor da memória
+    // + void setvalor() - grava na memória
+    // + int calculardobro() - calcula o dobro dos números pedidos
+    private int valor = 0;
+    
+    public int getValor(){
+        return valor;
+    }
+    
+    public void setValor(int valor){
+        this.valor = valor;
+    }
+    
+    public int calcularDobro(){
+        return this.valor*2;
+    }
+}
+package br.com.controle;
+
+/**
+ *
+ * @author laboratorio
+ */
+public class Calculadora {
+    private int valor1 = 0;
+    private int valor2 = 0;
+    
+    public int getValor1(){
+        return valor1;
+    }
+    
+    public int getValor2(){
+        return valor2;
+    }
+    
+    public void setValor1(int valor1){
+        this.valor1 = valor1;
+    }
+    
+    public void setValor2(int valor2){
+        this.valor2 = valor2;
+    }
+    
+    public int somaValor(){
+        return this.valor1+valor2;
+    }
+    
+    public int subValor(){
+        return this.valor1-valor2;
+    }
+    
+    public int multValor(){
+        return this.valor1*valor2;
+    }
+    
+    public int divValor(){
+        return this.valor1/valor2;
+    }
+}
