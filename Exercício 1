@@ -1,0 +1,45 @@
+Faça um programa que receba como dado de entrada o valor de uma
+compra e
+a quantidade de parcelas e mostre como resultado o valor da compra e
+suas
+parcelas já com descontos ou juros, onde:
+a) parcelas até 3x, juros 5%;
+b) parcelas acima de 3x, juros 10%;
+c) pagamento à vista, desconto 5$.
+observação: mostrar o valor de cada parcela
+dentro de uma tabela HTM
+
+
+FORM HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,
+ <link href="estilo.css" rel="stylesheet">
+ <title>Vendas</title>
+</head>
+<body>
+ <form method="post" action="recebe.php">
+ <center>
+ <fieldset>
+ Digite o valor do produto: <input type="text"
+ Digite a quantidade de parcelas: <input type="
+ <input type="submit" value="Enviar">
+ </fieldset>
+ </center>
+ </form>
+</body>
+</html>
+
+RECEBE.PHP:
+<html>
+ <head>
+ <title>Valor das parcelas</title>
+ <meta charset="UTF-8"/>
+ <link rel="stylesheet" type="text/css" href="estilo
+ </head>
+ <body>
+ <center>
+ <div>
+ <table id="table">
